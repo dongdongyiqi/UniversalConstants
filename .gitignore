@@ -1,1 +1,4 @@
-libcs.a
+.idea/
+.DS_Store
+*.a
+cmake-build-debug/
