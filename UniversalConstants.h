@@ -2,8 +2,6 @@
 #include <gmpxx.h>
 
 namespace UniversalConstants {
-
-    // 🌀 数学常数空间（理论无限精度）
     namespace Math {
         mpf_class PI(long long digits);
         mpf_class TAU(long long digits);
@@ -30,7 +28,6 @@ namespace UniversalConstants {
         mpf_class LANDAU_RAMANUJAN(long long digits);
     }
 
-    // 🔬 物理/化学/天文学常数空间（人类测量极限截断）
     namespace Physics {
         mpf_class C(long long digits);
         mpf_class G(long long digits);
