@@ -1,6 +1,6 @@
 # 🌌 UniversalConstants Library (v1.0.0)
 
-** UniversalConstants** 是一个基于 C++17 和 GNU GMP 库打造的**全宇宙全常用常数高精度终极闭盒库**。
+**UniversalConstants** 是一个基于 C++17 打造的**常用常数库**。
 
 本项目创新性地采用了 **“括号控位语法”`NAME(digits)`**，完美实现了接口的终极统一。无论是面对纯数学理论的无限精度计算，还是面对人类物理实验测量的极限截断，本库都能动态调配底层算力，优雅丝滑地支撑你的每一场高精度科研和工程运算。
 
@@ -120,18 +120,23 @@ int main() {
 ---
 
 ## 🏗️ 在你的项目中进行编译与链接
-由于本项目已编译为高效率的二进制静态库 `libcs.a`，你在新项目的 `CMakeLists.txt` 中只需要如此配置即可一键链接起飞：
+你在新项目的 `CMakeLists.txt` 中只需要如此配置即可一键链接起飞：
 
 ```cmake
-# 引入头文件路径与你的静态库路径
-include_directories(你的头文件目录)
-link_directories(你的静态库libcs.a所在目录 /usr/local/lib)
+cmake_minimum_required(VERSION 3.15)
+project(MyApp LANGUAGES CXX)
 
-add_executable(你的项目名 main.cpp)
+# 假设用户把你的库 clone 到了 external/UniversalConstants 目录下
+add_subdirectory(external/UniversalConstants)
 
-# 核心链接链接绑定
-target_link_libraries(你的项目名 cs gmpxx gmp)
+add_executable(main main.cpp)
+
+# 链接你的库，因为你设置了 PUBLIC，用户不需要再手动写 GMP
+target_link_libraries(main PRIVATE UniversalConstants)
 ```
 
 ---
+
+当然，绝大多数程序员根本用不到“现场计算 360 万位圆周率”，大家只需要一个 `3.1415926` 就够了，所以不太用为了这个去装 GMP。
+
 💡 *Developed with passion for extreme numeric computation. Managed securely by CMake Static Architecture.*
