@@ -1,3 +1,10 @@
+<div align="center">
+  <a href="./README.md">English</a> | <strong>简体中文</strong>
+</div>
+
+<br>
+
+
 <h1>🌌 UniversalConstants Library (v1.0.0)</h1>
 
 <p><strong>UniversalConstants</strong> 是一个基于 C++17 打造的<strong>常用常数库</strong>。</p>
@@ -161,23 +168,4 @@ target_link_libraries(MyApp PRIVATE UniversalConstants)
 <tr><td><code>ELECTRON_RADIUS(digits)</code></td><td><strong>经典电子半径</strong></td><td>2.8179403262 × 10^-15 m</td></tr>
 <tr><td><code>RYDBERG_CONSTANT(digits)</code></td><td><strong>里德伯常数 R_∞</strong></td><td>10973731.56816 m^-1</td></tr>
 <tr><td><code>NA(digits)</code></td><td><strong>阿伏伽德罗常数 N_A</strong></td><td>6.02214076 × 10^23 mol^-1</td></tr>
-<tr><td><code>KB(digits)</code></td><td><strong>玻尔兹曼常数 k_B</strong></td><td>1.380649 × 10^-23 J/K</td></tr>
-<tr><td><code>R_GAS(digits)</code></td><td><strong>摩尔气体常数 R</strong></td><td>8.314462618 J/(mol·K)</td></tr>
-<tr><td><code>FARADAY(digits)</code></td><td><strong>法拉第常数 F</strong></td><td>96485.33212 C/mol（电化学核心指标）</td></tr>
-<tr><td><code>STEFAN_BOLTZMANN(digits)</code></td><td><strong>斯特藩-玻尔兹曼常数</strong></td><td>5.670374419 × 10^-8 W/(m^2·K^4)</td></tr>
-<tr><td><code>WIEN(digits)</code></td><td><strong>维恩位移常数</strong></td><td>2.897771955 × 10^-3 m·K</td></tr>
-<tr><td><code>AU(digits)</code></td><td><strong>天文单位 au</strong></td><td>149597870700 m（日地平均距离定义值）</td></tr>
-<tr><td><code>LIGHT_YEAR(digits)</code></td><td><strong>光年</strong></td><td>9460730472580800 m</td></tr>
-<tr><td><code>PARSEC(digits)</code></td><td><strong>秒差距 pc</strong></td><td>3.085677581 × 10^16 m</td></tr>
-<tr><td><code>SOLAR_MASS(digits)</code></td><td><strong>太阳质量</strong></td><td>1.98847 × 10^30 kg</td></tr>
-<tr><td><code>EARTH_MASS(digits)</code></td><td><strong>地球质量</strong></td><td>5.9722 × 10^24 kg</td></tr>
-</tbody>
-</table>
-
-<hr>
-
-<h2>💡 关于本项目定位</h2>
-
-<p>本项目的硬核版是为<strong>真正需要高精度数值计算</strong>的场景（如计算物理、密码学、高精度数学研究）打造的。它非常适合需要动态控制小数位数的硬核科研和工程运算。如果你只是需要一个普通的 <code>double</code> 级别精度（3.1415926），推荐直接使用源码中的 <code>BasicConstants.h</code>，无需引入 GMP。</p>
-
-<p>💡 <em>Developed with passion for extreme numeric computation. Managed securely by CMake Static Architecture.</em></p>
+<tr><td><code>KB(digits)</code></td><td><strong>玻尔兹曼常数 k_B</strong></td><t
